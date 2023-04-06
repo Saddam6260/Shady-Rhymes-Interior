@@ -1,5 +1,102 @@
+/*** Fonts ***/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*** Variables ***/
+/*** Mixin ***/
+/*** Global Style ***/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: orange;
+  font-family: "Poppins', sans-serif";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #564E4E;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #564E4E;
+}
+
+@media only screen and (min-width: 1120px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1120px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+}
+/*** Common class ***/
+.container {
+  max-width: 335px;
+  margin: auto;
+}
+
+.common-pera {
+  font-size: 12px;
+  font-weight: 400;
+  color: #564E4E;
+}
+
+@media only screen and (min-width: 1120px) {
+  .container {
+    max-width: 1020;
+  }
+  .common-pera {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .container {
+    max-width: 1760;
+  }
+  .common-pera {
+    font-size: 18px;
+  }
+}
+footer {
+  background: linear-gradient(300.41deg, #000000 31.42%, #4b4b4b 117.78%);
+}
+
+@media only screen and (min-width: 1120px) {
+  footer {
+    background: linear-gradient(275.58deg, #000000 0%, #4b4b4b 100%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+footer {
+  background: linear-gradient(300.41deg, #000000 31.42%, #4b4b4b 117.78%);
+}
+
+@include media(1120px) {
+  footer {
+    background: linear-gradient(275.58deg, #000000 0%, #4b4b4b 100%);
+  }
+}

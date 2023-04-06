@@ -1,3 +1,96 @@
-body{
-    background-color: orange;
+/*** Fonts ***/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*** Variables ***/
+$poppins: "Poppins', sans-serif";
+$white: #ffff;
+$brown: #564E4E;
+
+/*** Mixin ***/
+@mixin media($screen) {
+    @media only screen and (min-width: $screen) {
+        @content;
+    }
 }
+
+/*** Global Style ***/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: $poppins;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: $white;
+}
+h2{
+    font-weight: 500;
+    font-size: 18px;
+    color: $brown;
+}
+h5{
+    font-size: 14px;
+    font-weight: 500;
+    color: $brown;
+}
+@include media(1120px) {
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h5{
+        font-size: 18px;
+    }
+}
+@include media(1120px) {
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    h5{
+        font-size: 24px;
+    }
+}
+
+/*** Common class ***/
+.container{
+    max-width: 335px;
+    margin: auto;
+}
+.common-pera{
+    font-size: 12px;
+    font-weight: 400;
+    color: $brown;
+}
+@include media(1120px) {
+    .container{
+        max-width: 1020;
+    }
+    .common-pera{
+        font-size: 16px;
+    }
+}
+@include media(1920px) {
+    .container{
+        max-width: 1760;
+    }
+    .common-pera{
+        font-size: 18px;
+    }
+}
+
+@import "./footer";
