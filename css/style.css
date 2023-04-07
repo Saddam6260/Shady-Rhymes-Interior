@@ -8,8 +8,16 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins', sans-serif";
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+p,
+a,
+span {
+  font-family: "Poppins";
 }
 
 li {
@@ -29,13 +37,14 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 18px;
-  color: #564E4E;
+  color: #564e4e;
+  margin-bottom: 20px;
 }
 
 h5 {
   font-size: 14px;
   font-weight: 500;
-  color: #564E4E;
+  color: #564e4e;
 }
 
 @media only screen and (min-width: 1120px) {
@@ -49,7 +58,7 @@ h5 {
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 1120px) {
+@media only screen and (min-width: 1920px) {
   h1 {
     font-size: 48px;
   }
@@ -69,7 +78,8 @@ h5 {
 .common-pera {
   font-size: 12px;
   font-weight: 400;
-  color: #564E4E;
+  color: #564e4e;
+  line-height: 18px;
 }
 
 @media only screen and (min-width: 1120px) {
@@ -78,6 +88,7 @@ h5 {
   }
   .common-pera {
     font-size: 16px;
+    line-height: 24px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -86,6 +97,106 @@ h5 {
   }
   .common-pera {
     font-size: 18px;
+    line-height: 200%;
+  }
+}
+/*** Make Your Room ***/
+#make-your-room {
+  padding: 100px 0px;
+}
+#make-your-room .container .img-wrap {
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+#make-your-room .container .img-wrap img {
+  max-width: 100%;
+}
+#make-your-room .container .content h2 {
+  margin-bottom: 20px;
+}
+#make-your-room .container .content p:nth-child(3) {
+  margin: 30px 0px 20px 0px;
+}
+#make-your-room .container .content .email-wrap {
+  max-width: 280px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid #fadcd9;
+  border-radius: 30px;
+  background-color: #faf6f3;
+}
+#make-your-room .container .content .email-wrap input {
+  background: none;
+  border: none;
+}
+#make-your-room .container .content .email-wrap ::placeholder {
+  color: #f79489;
+  font-size: 10px;
+}
+#make-your-room .container .content .email-wrap button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fadcd9;
+  border: none;
+}
+#make-your-room .container .content .email-wrap button span {
+  color: #f79489;
+}
+
+@media only screen and (min-width: 1120px) {
+  #make-your-room {
+    padding: 150px 0px;
+  }
+  #make-your-room .container {
+    display: flex;
+    column-gap: 40px;
+  }
+  #make-your-room .container .img-wrap {
+    max-width: 455px;
+  }
+  #make-your-room .container .content .email-wrap {
+    max-width: 330px;
+    height: 45px;
+    margin-top: 30px;
+  }
+  #make-your-room .container .content .email-wrap ::placeholder {
+    font-size: 12px;
+  }
+  #make-your-room .container .content .email-wrap button {
+    width: 34px;
+    height: 34px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #make-your-room {
+    padding: 200px 0px;
+  }
+  #make-your-room .container {
+    column-gap: 60px;
+  }
+  #make-your-room .container .img-wrap {
+    max-width: 860px;
+  }
+  #make-your-room .container .content p:nth-child(3) {
+    display: block;
+    margin: 50px 0px 40px 0px;
+  }
+  #make-your-room .container .content .email-wrap {
+    max-width: 400px;
+    height: 60px;
+    padding: 0px 8px 0px 20px;
+    margin-top: 0px;
+  }
+  #make-your-room .container .content .email-wrap ::placeholder {
+    font-size: 14px;
+  }
+  #make-your-room .container .content .email-wrap button {
+    width: 44px;
+    height: 44px;
   }
 }
 /*** Footer ***/
@@ -130,12 +241,12 @@ footer .bottom a {
     background: linear-gradient(275.58deg, #000000 0%, #4b4b4b 100%);
     padding: 50px 0px 35px 0px;
   }
-  footer .img-wrap {
-    max-width: 184px;
-  }
   footer .links {
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+  footer .links .img-wrap {
+    max-width: 184px;
   }
   footer .links ul h5 {
     margin-bottom: 20px;
@@ -152,7 +263,7 @@ footer .bottom a {
     background: linear-gradient(275.58deg, #000000 0%, #4b4b4b 100%);
     padding: 100px 0px 40px 0px;
   }
-  footer .img-wrap {
+  footer .links .img-wrap {
     max-width: 238px;
   }
   footer .links ul li a {

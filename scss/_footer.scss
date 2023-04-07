@@ -9,10 +9,10 @@ footer {
     row-gap: 40px;
     margin-bottom: 100px;
 
-    .img-wrap{
+    .img-wrap {
       max-width: 124px;
 
-      img{
+      img {
         width: 100%;
       }
     }
@@ -35,9 +35,9 @@ footer {
       }
     }
   }
-  .bottom{
+  .bottom {
     text-align: center;
-    a{
+    a {
       color: $white;
     }
   }
@@ -47,13 +47,12 @@ footer {
   footer {
     background: linear-gradient(275.58deg, #000000 0%, #4b4b4b 100%);
     padding: 50px 0px 35px 0px;
-    .img-wrap{
-      max-width: 184px;
-    }
     .links {
       flex-flow: row wrap;
       justify-content: space-between;
-
+      .img-wrap {
+        max-width: 184px;
+      }
       ul {
         h5 {
           margin-bottom: 20px;
@@ -74,10 +73,10 @@ footer {
   footer {
     background: linear-gradient(275.58deg, #000000 0%, #4b4b4b 100%);
     padding: 100px 0px 40px 0px;
-    .img-wrap{
-      max-width: 238px;
-    }
-    .links {  
+    .links {
+      .img-wrap {
+        max-width: 238px;
+      }
       ul {
         li {
           a {
