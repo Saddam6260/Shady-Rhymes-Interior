@@ -1,7 +1,6 @@
 /*** Fonts ***/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*** Variables ***/
-/*** Mixin ***/
 /*** Global Style ***/
 * {
   margin: 0px;
@@ -75,7 +74,7 @@ h5 {
 
 @media only screen and (min-width: 1120px) {
   .container {
-    max-width: 1020;
+    max-width: 1020px;
   }
   .common-pera {
     font-size: 16px;
@@ -83,19 +82,81 @@ h5 {
 }
 @media only screen and (min-width: 1920px) {
   .container {
-    max-width: 1760;
+    max-width: 1760px;
   }
   .common-pera {
     font-size: 18px;
   }
 }
+/*** Footer ***/
 footer {
   background: linear-gradient(300.41deg, #000000 31.42%, #4b4b4b 117.78%);
+  padding: 20px 0px 28px 0px;
+}
+footer .links {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 40px;
+  margin-bottom: 100px;
+}
+footer .links .img-wrap {
+  max-width: 124px;
+}
+footer .links .img-wrap img {
+  width: 100%;
+}
+footer .links ul h5 {
+  margin-bottom: 10px;
+  color: #fadcd9;
+}
+footer .links ul li {
+  margin-bottom: 20px;
+}
+footer .links ul li a {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+footer .bottom {
+  text-align: center;
+}
+footer .bottom a {
+  color: white;
 }
 
 @media only screen and (min-width: 1120px) {
   footer {
     background: linear-gradient(275.58deg, #000000 0%, #4b4b4b 100%);
+    padding: 50px 0px 35px 0px;
+  }
+  footer .img-wrap {
+    max-width: 184px;
+  }
+  footer .links {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  footer .links ul h5 {
+    margin-bottom: 20px;
+  }
+  footer .links ul li {
+    margin-bottom: 24px;
+  }
+  footer .links ul li a {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  footer {
+    background: linear-gradient(275.58deg, #000000 0%, #4b4b4b 100%);
+    padding: 100px 0px 40px 0px;
+  }
+  footer .img-wrap {
+    max-width: 238px;
+  }
+  footer .links ul li a {
+    font-size: 18px;
   }
 }
 

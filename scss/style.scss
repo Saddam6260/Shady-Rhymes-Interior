@@ -5,8 +5,8 @@
 $poppins: "Poppins', sans-serif";
 $white: #ffff;
 $brown: #564E4E;
+$pink: #fadcd9;
 
-/*** Mixin ***/
 @mixin media($screen) {
     @media only screen and (min-width: $screen) {
         @content;
@@ -78,7 +78,7 @@ h5{
 }
 @include media(1120px) {
     .container{
-        max-width: 1020;
+        max-width: 1020px;
     }
     .common-pera{
         font-size: 16px;
@@ -86,7 +86,7 @@ h5{
 }
 @include media(1920px) {
     .container{
-        max-width: 1760;
+        max-width: 1760px;
     }
     .common-pera{
         font-size: 18px;
