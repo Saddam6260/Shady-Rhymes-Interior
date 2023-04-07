@@ -8,6 +8,9 @@ $brown: #564e4e;
 $pink: #fadcd9;
 $thinpink: #faf6f3;
 $orange: #f79489;
+$thinsky: #f6f6f6;
+$gray: #c4c4c4;
+$golden: #ffcb45;
 
 @mixin media($screen) {
   @media only screen and (min-width: $screen) {
@@ -115,6 +118,7 @@ h5 {
   }
 }
 
+@import "./_featured-product";
 @import "./_about-our-services";
 @import "./_make-your-room";
 @import "./footer";

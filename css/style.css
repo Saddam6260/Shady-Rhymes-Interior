@@ -109,6 +109,102 @@ h5 {
     line-height: 200%;
   }
 }
+/*** Featured Product ***/
+#featured-product {
+  padding: 100px 0px 100px 0px;
+}
+#featured-product h2 {
+  text-align: center;
+}
+#featured-product .product-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+#featured-product .product-wrap .product {
+  width: 162px;
+}
+#featured-product .product-wrap .product .img-wrap {
+  width: 162px;
+  height: 154px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+#featured-product .product-wrap .product .img-wrap img {
+  width: 96px;
+}
+#featured-product .product-wrap .product .content {
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 10px;
+}
+#featured-product .product-wrap .product .content p:nth-child(1) {
+  font-size: 14px;
+}
+#featured-product .product-wrap .product .content p:nth-child(2) {
+  color: #c4c4c4;
+}
+#featured-product .product-wrap .product .content span {
+  font-size: 12px;
+  color: #ffcb45;
+}
+
+@media only screen and (min-width: 1120px) {
+  #featured-product {
+    padding: 150px 0px 130px 0px;
+  }
+  #featured-product h2 {
+    margin-bottom: 30px;
+  }
+  #featured-product .product-wrap {
+    column-gap: 20px;
+  }
+  #featured-product .product-wrap .product {
+    width: 240px;
+  }
+  #featured-product .product-wrap .product .img-wrap {
+    width: 240px;
+    height: 225px;
+  }
+  #featured-product .product-wrap .product .img-wrap img {
+    width: 140px;
+  }
+  #featured-product .product-wrap .product .content p:nth-child(1) {
+    font-size: 16px;
+  }
+  #featured-product .product-wrap .product .content span {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #featured-product {
+    padding: 200px 0px 167px 0px;
+  }
+  #featured-product h2 {
+    margin-bottom: 40px;
+  }
+  #featured-product .product-wrap .product {
+    width: 425px;
+  }
+  #featured-product .product-wrap .product .img-wrap {
+    width: 425px;
+    height: 400px;
+  }
+  #featured-product .product-wrap .product .img-wrap img {
+    width: 250px;
+  }
+  #featured-product .product-wrap .product .content p:nth-child(1) {
+    font-size: 18px;
+  }
+  #featured-product .product-wrap .product .content span {
+    font-size: 15px;
+  }
+}
 /*** About Our Services ***/
 #about-our-services {
   padding: 40px 0px 88px 0px;
