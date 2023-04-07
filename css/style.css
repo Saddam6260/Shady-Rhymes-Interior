@@ -1,5 +1,5 @@
 /*** Fonts ***/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 /*** Variables ***/
 /*** Global Style ***/
 * {
@@ -82,6 +82,12 @@ h5 {
   line-height: 18px;
 }
 
+.small-text {
+  font-size: 12px;
+  font-weight: 300;
+  color: #564e4e;
+}
+
 @media only screen and (min-width: 1120px) {
   .container {
     max-width: 1020px;
@@ -89,6 +95,9 @@ h5 {
   .common-pera {
     font-size: 16px;
     line-height: 24px;
+  }
+  .small-text {
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -98,6 +107,75 @@ h5 {
   .common-pera {
     font-size: 18px;
     line-height: 200%;
+  }
+}
+/*** About Our Services ***/
+#about-our-services {
+  padding: 40px 0px 88px 0px;
+  background-color: #faf6f3;
+}
+#about-our-services .container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#about-our-services .container .card-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 40px;
+}
+#about-our-services .container .card-wrap .card h5 {
+  margin-bottom: 10px;
+}
+#about-our-services .container .card-wrap .card .person {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+#about-our-services .container .card-wrap .card .person .img-wrap {
+  width: 40px;
+  height: 40px;
+}
+#about-our-services .container .card-wrap .card .person .img-wrap img {
+  width: 100%;
+  border-radius: 50%;
+}
+#about-our-services .container .card-wrap .card .person h5 {
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 1120px) {
+  #about-our-services {
+    padding: 50px 0px 130px 0px;
+  }
+  #about-our-services .container h2 {
+    margin-bottom: 80px;
+  }
+  #about-our-services .container .card-wrap {
+    flex-flow: row wrap;
+    column-gap: 45px;
+  }
+  #about-our-services .container .card-wrap .card {
+    width: 310px;
+    height: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #about-our-services {
+    padding: 86px 0px 200px 0px;
+  }
+  #about-our-services .container h2 {
+    margin-bottom: 110px;
+  }
+  #about-our-services .container .card-wrap {
+    column-gap: 70px;
+  }
+  #about-our-services .container .card-wrap .card {
+    height: 286px;
+    width: 540px;
   }
 }
 /*** Make Your Room ***/

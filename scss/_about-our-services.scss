@@ -1,0 +1,85 @@
+/*** About Our Services ***/
+#about-our-services {
+  padding: 40px 0px 88px 0px;
+  background-color: $thinpink;
+
+  .container {
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .card-wrap {
+      display: flex;
+      flex-flow: column wrap;
+      row-gap: 40px;
+      .card {
+        h5 {
+          margin-bottom: 10px;
+        }
+
+        .person {
+          margin-top: 15px;
+          display: flex;
+          align-items: center;
+          column-gap: 7px;
+
+          .img-wrap {
+            width: 40px;
+            height: 40px;
+
+            img {
+              width: 100%;
+              border-radius: 50%;
+            }
+          }
+          h5 {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(1120px) {
+  #about-our-services {
+    padding: 50px 0px 130px 0px;
+
+    .container {
+      h2 {
+        margin-bottom: 80px;
+      }
+      .card-wrap {
+        flex-flow: row wrap;
+        column-gap: 45px;
+        .card {
+          width: 310px;
+          height: 250px;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+@include media(1920px) {
+  #about-our-services {
+    padding: 86px 0px 200px 0px;
+
+    .container {
+      h2 {
+        margin-bottom: 110px;
+      }
+      .card-wrap {
+        column-gap: 70px;
+
+        .card{
+            height: 286px;
+            width: 540px;
+        }
+      }
+    }
+  }
+}
