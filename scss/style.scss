@@ -35,6 +35,10 @@ a,
 span {
   font-family: $poppins;
 }
+button{
+  border: none;
+  background-color: none;
+}
 li {
   list-style: none;
 }
@@ -118,6 +122,9 @@ h5 {
   }
 }
 
+
+@import "./visualize-idea";
+@import "./_why-choose-us";
 @import "./_featured-product";
 @import "./_about-our-services";
 @import "./_make-your-room";

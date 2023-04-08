@@ -1,0 +1,15 @@
+/*** visualize idea ***/
+#visualize-idea{
+    .img-wrap{
+        width: 335px;
+        margin-bottom: 100px;
+        img{
+            width: 100%;
+        }
+    }
+    .category-wrap{
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 20px;
+    }
+}
