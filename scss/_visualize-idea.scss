@@ -1,15 +1,148 @@
 /*** visualize idea ***/
-#visualize-idea{
-    .img-wrap{
-        width: 335px;
-        margin-bottom: 100px;
-        img{
-            width: 100%;
-        }
+#visualize-idea {
+  .container {
+    .img-wrap {
+      width: 335px;
+      margin-bottom: 100px;
+      img {
+        width: 100%;
+      }
     }
-    .category-wrap{
+    .content-wrap {
+      max-width: 335px;
+      .category-wrap {
+        margin-top: 40px;
         display: flex;
         flex-flow: column wrap;
         row-gap: 20px;
+        .category {
+          .title {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+              span {
+                color: $orange;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        a {
+          color: $orange;
+          font-size: 12px;
+        }
+      }
     }
+  }
+}
+
+.category-text {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: none;
+}
+.show-text {
+  .category-text {
+    display: block;
+  }
+}
+.minus-icon {
+  display: none;
+}
+.show-text {
+  .minus-icon {
+    display: inline;
+  }
+}
+.show-text {
+  .plus-icon {
+    display: none;
+  }
+}
+
+@include media(1120px) {
+  #visualize-idea {
+    .container {
+      display: flex;
+      flex-flow: row wrap;
+      column-gap: 30px;
+      .img-wrap {
+        width: 455px;
+        height: 360px;
+        margin-bottom: 0px;
+        order: 2;
+        img {
+          height: 100%;
+        }
+      }
+      .content-wrap {
+        max-width: 535px;
+        .category-wrap {
+          margin-top: 20px;
+          order: 1;
+          .category {
+            .title {
+              button {
+                span {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .category-text {
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+}
+@include media(1920px) {
+  #visualize-idea {
+    .container {
+        column-gap: 84px;
+      .img-wrap {
+        width: 870px;
+        margin-bottom: 100px;
+        height: initial;
+        img {
+
+          height: initial;
+        }
+      }
+      .content-wrap {
+        max-width: 806px;
+        .category-wrap {
+          margin-top: 40px;
+          display: flex;
+          flex-flow: column wrap;
+          row-gap: 20px;
+          .category {
+            .title {
+              button {
+                span {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .category-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
 }
