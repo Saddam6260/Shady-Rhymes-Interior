@@ -37,7 +37,7 @@ span {
 }
 button{
   border: none;
-  background-color: none;
+  background: none;
 }
 li {
   list-style: none;
@@ -122,9 +122,9 @@ h5 {
   }
 }
 
-
-@import "./visualize-idea";
+@import "./_header.scss";
 @import "./_why-choose-us";
+@import "./visualize-idea";
 @import "./_featured-product";
 @import "./_about-our-services";
 @import "./_make-your-room";
